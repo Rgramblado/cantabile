@@ -5,6 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #2680A9 transparent;
+  
+}
+
+body {
+  overflow-y: overlay;
+  background-color: #06AAC7;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background-color: #2680A9;
+  border-radius: 10px;
+  width: 20px;
+  position: absolute;
 }
 
 code {
