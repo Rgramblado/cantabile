@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Logo from './assets/Images/logo.png'
 import './App.css';
 import './assets/Fonts/index.css';
-import { H2, Span } from './components/Basics';
+import { H2, Div } from './components/Basics';
 import Modal from './components/Modal';
 import { useEffect, useRef, useState } from 'react';
 import Home from './pages/Home';
@@ -49,7 +49,7 @@ function App() {
 
   const queEsCantabilex = () => {
     return(<>“
-    <Span italic color="#000" fontSize="23px">Que la música pertenezca a todos</Span>”  (Z. Kodaly).
+    <Div italic color="#000" fontSize="23px">Que la música pertenezca a todos</Div>”  (Z. Kodaly).
     <p>Cantabile Extremadura es una asociación cultural para el desarrollo, difusión y apoyo del arte, especialmente de la música, a través de la acción artística, la organización de eventos y el apoyo a iniciativas que tienen como fundamento el aprendizaje y la práctica de la música y de disciplinas artísticas.</p>
     <p>Ya lo dice Eliot Eisner: “hay conocimientos que sólo el arte puede proporcionar”. Desde la fuerza asociativa intentemos también apoyar y fomentar las actividades culturales como herramienta para la igualdad, espacio para la convivencia y contribuir con actos que construyan una sociedad más rica, una sociedad mejor.</p>
     </>)
@@ -80,7 +80,7 @@ function App() {
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/ }
               <a href="#" onClick={() => {setQueEsCantabilexActive(true); setMenuOpen(false)}}>
                 <li>
-                  <div>¿Qué es <Span bold>Cantabilex</Span>?</div>
+                  <div>¿Qué es <Div bold>Cantabilex</Div>?</div>
                 </li>
               </a>
               <a href="#encuentro" onClick={() => setMenuOpen(false)}>

@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { Span } from "../components/Basics"
+import { Div } from "../components/Basics"
 
 
 const Actividades = () => {
     return(
         <MainFrame>
-            <Span>
+            <Div fontSize="20px" margin="10px 20px">
                 <p>Clases individuales según modalidad*</p>
                 <p>Se contará con pianos de estudio a disposición del alumnado.</p>
                 <p>Todos los participantes recibirán clases de: </p> 
@@ -23,15 +23,15 @@ const Actividades = () => {
                 </ul>
                 <p>Además, podrán participar en conciertos durante la semana en Villafranca y en localidades cercanas para promoción del alumnado.</p>
                 <p>*Los alumnos que quieran tocar sus obras con pianista acompañante deben enviar las partituras de la parte de piano en formato pdf al email: cantabilecm@gmail.com antes del inicio del curso.</p>
-            </Span>
+            </Div>
         </MainFrame>
     )
 }
 
-const MainFrame = styled.div `
+const MainFrame = styled.section `
   max-width: 1024px;
   min-width: 1024px;
-  margin-top: 20px;
+  display: flex;
   img{
     max-width: 100%
   }

@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { H1, H2, H3, Span } from '../components/Basics';
+import { H1, H2, H3, Div } from '../components/Basics';
 
 const Encuentro = () => {
     return ( <MainFrame>
-        <Span>
+        <Div margin={"10px 20px"} fontSize={"20px"}>
           <p>
             El encuentro se organiza en dos modalidades: una modalidad dirigida a estudiantes de Grado Elemental y Profesional y otra a últimos cursos de Grado Profesional y Superior. 
           </p> 
@@ -22,15 +22,15 @@ const Encuentro = () => {
           <p> 
             En el Colegio San José de Villafranca de los Barros. 
           </p> 
-        </Span>
+        </Div>
         </MainFrame>
     )
 }
 
-const MainFrame = styled.div `
+const MainFrame = styled.section `
   max-width: 1024px;
   min-width: 1024px;
-  margin-top: 20px;
+  display: flex;
   img{
     max-width: 100%
   }

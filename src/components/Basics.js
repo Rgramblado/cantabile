@@ -14,7 +14,8 @@ export const H3 = styled.h3 `
     letter-spacing: 4px;
 `
 
-export const Span = styled.span `
+export const Div  = styled.div `
+    display: inline;
     color: ${props => props.color ?? "#FFF"};
     font-weight: ${props => props.bold ? "bold" : "normal"};
     ${props => props.fontSize ? "font-size: " + props.fontSize : ""};

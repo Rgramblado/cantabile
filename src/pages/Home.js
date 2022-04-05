@@ -1,26 +1,26 @@
 import Colegio from '../assets/Images/colegio-transparente.png'
-import { H1, H2, H3, Span } from '../components/Basics';
+import { H1, H2, H3, Div } from '../components/Basics';
 import styled from 'styled-components';
 
 const Home = () => {
     return(
         <MainFrame>
             <Underlined>
-                <H1 fontSize={"25px"}><Span bold>VI ENCUENTRO MUSICAL <Span color={"#F4B95F"} bold>CANTABIL</Span><Span color={"#000000"} bold>EX</Span></Span></H1>
-                <H1><Span color={"#F4B95F"} bold fontSize={"50px"}>VERANO 2022</Span></H1>
+                <H1 fontSize={"25px"}><Div bold textAlign="center">VI ENCUENTRO MUSICAL <Div color={"#F4B95F"} bold>CANTABIL</Div><Div color={"#000000"} bold>EX</Div></Div></H1>
+                <H1><Div color={"#F4B95F"} bold fontSize={"50px"}>VERANO 2022</Div></H1>
             </Underlined>
             <Img src={Colegio}/>
             <EsRefrescanteContainer>
                 <EsRefrescante>
-                    <Span bold fontSize="25px">Lo mires por donde lo mires</Span>
-                    <Span bold fontSize="47px">¡Es <Span bold fontSize="47px" color={"#F4B95F"} >refrescante!</Span></Span>
+                    <Div bold fontSize="25px">Lo mires por donde lo mires</Div>
+                    <Div bold fontSize="47px">¡Es <Div bold fontSize="47px" color={"#F4B95F"} >refrescante!</Div></Div>
                 </EsRefrescante>
             </EsRefrescanteContainer>
         </MainFrame>
     )
 }
 
-const MainFrame = styled.div `
+const MainFrame = styled.section `
   max-width: 1024px;
   min-width: 1024px;
   margin-top: 20px;
